@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChy.Core.Domains", "MyChy.Core.Domains\MyChy.Core.Domains.csproj", "{AFD46982-7040-4702-BD86-0F0D5F2DD903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChy.Frame.Common", "MyChy.Frame.Common\MyChy.Frame.Common.csproj", "{33A29C1F-5722-43C7-A838-3E30EFAE252B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChy.Frame.Tools", "MyChy.Frame.Tools\MyChy.Frame.Tools.csproj", "{B557FEC7-2854-429B-AABE-CAEB286BF510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChy.Core.Data", "MyChy.Core.Data\MyChy.Core.Data.csproj", "{095C4B49-71D2-4F35-ABAF-B800DB926414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChy.Frame.Data", "MyChy.Frame.Data\MyChy.Frame.Data.csproj", "{E81C4B29-05CD-4C8F-A4E1-F88C29B2820E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1B6F13F9-667E-467A-8A66-0AE8942198CF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChy.Frame", "MyChy.Frame\MyChy.Frame.csproj", "{51F5D1E2-4401-47C2-99F8-7D828CA0E61C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD46982-7040-4702-BD86-0F0D5F2DD903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD46982-7040-4702-BD86-0F0D5F2DD903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD46982-7040-4702-BD86-0F0D5F2DD903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD46982-7040-4702-BD86-0F0D5F2DD903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A29C1F-5722-43C7-A838-3E30EFAE252B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A29C1F-5722-43C7-A838-3E30EFAE252B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A29C1F-5722-43C7-A838-3E30EFAE252B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A29C1F-5722-43C7-A838-3E30EFAE252B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B557FEC7-2854-429B-AABE-CAEB286BF510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B557FEC7-2854-429B-AABE-CAEB286BF510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B557FEC7-2854-429B-AABE-CAEB286BF510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B557FEC7-2854-429B-AABE-CAEB286BF510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095C4B49-71D2-4F35-ABAF-B800DB926414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095C4B49-71D2-4F35-ABAF-B800DB926414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095C4B49-71D2-4F35-ABAF-B800DB926414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095C4B49-71D2-4F35-ABAF-B800DB926414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81C4B29-05CD-4C8F-A4E1-F88C29B2820E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81C4B29-05CD-4C8F-A4E1-F88C29B2820E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81C4B29-05CD-4C8F-A4E1-F88C29B2820E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81C4B29-05CD-4C8F-A4E1-F88C29B2820E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F5D1E2-4401-47C2-99F8-7D828CA0E61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F5D1E2-4401-47C2-99F8-7D828CA0E61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F5D1E2-4401-47C2-99F8-7D828CA0E61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F5D1E2-4401-47C2-99F8-7D828CA0E61C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
