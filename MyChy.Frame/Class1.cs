@@ -8,5 +8,6 @@ namespace MyChy.Frame
 {
     public class Class1
     {
+        //测试开始
     }
 }
