@@ -72,7 +72,7 @@ namespace MyChy.Frame.Data
         /// <returns>操作影响的行数 </returns>
         public virtual int Insert(TEntity entity, bool isSave = true)
         {
-            PublicHelper.CheckArgument(entity, "entity");
+            //PublicHelper.CheckArgument(entity, "entity");
             EFContext.RegisterNew<TEntity, TKey>(entity);
             return isSave ? EFContext.Commit() : 0;
         }
@@ -85,7 +85,7 @@ namespace MyChy.Frame.Data
         /// <returns> 操作影响的行数 </returns>
         public virtual int Insert(IEnumerable<TEntity> entities, bool isSave = true)
         {
-            PublicHelper.CheckArgument(entities, "entities");
+            //PublicHelper.CheckArgument(entities, "entities");
             EFContext.RegisterNew<TEntity, TKey>(entities);
             return isSave ? EFContext.Commit() : 0;
         }
@@ -98,7 +98,7 @@ namespace MyChy.Frame.Data
         /// <returns> 操作影响的行数 </returns>
         public virtual int Delete(TKey id, bool isSave = true)
         {
-            PublicHelper.CheckArgument(id, "id");
+           // PublicHelper.CheckArgument(id, "id");
             TEntity entity = EFContext.Set<TEntity, TKey>().Find(id);
             return entity != null ? Delete(entity, isSave) : 0;
         }
@@ -111,7 +111,7 @@ namespace MyChy.Frame.Data
         /// <returns> 操作影响的行数 </returns>
         public virtual int Delete(TEntity entity, bool isSave = true)
         {
-            PublicHelper.CheckArgument(entity, "entity");
+            //PublicHelper.CheckArgument(entity, "entity");
             EFContext.RegisterDeleted<TEntity, TKey>(entity);
             return isSave ? EFContext.Commit() : 0;
         }
@@ -124,7 +124,7 @@ namespace MyChy.Frame.Data
         /// <returns> 操作影响的行数 </returns>
         public virtual int Delete(IEnumerable<TEntity> entities, bool isSave = true)
         {
-            PublicHelper.CheckArgument(entities, "entities");
+            //PublicHelper.CheckArgument(entities, "entities");
             EFContext.RegisterDeleted<TEntity, TKey>(entities);
             return isSave ? EFContext.Commit() : 0;
         }
@@ -137,7 +137,7 @@ namespace MyChy.Frame.Data
         /// <returns> 操作影响的行数 </returns>
         public virtual int Delete(Expression<Func<TEntity, bool>> predicate, bool isSave = true)
         {
-            PublicHelper.CheckArgument(predicate, "predicate");
+           // PublicHelper.CheckArgument(predicate, "predicate");
             List<TEntity> entities = EFContext.Set<TEntity, TKey>().Where(predicate).ToList();
             return entities.Count > 0 ? Delete(entities, isSave) : 0;
         }
@@ -150,7 +150,7 @@ namespace MyChy.Frame.Data
         /// <returns> 操作影响的行数 </returns>
         public virtual int Update(TEntity entity, bool isSave = true)
         {
-            PublicHelper.CheckArgument(entity, "entity");
+            //PublicHelper.CheckArgument(entity, "entity");
             EFContext.RegisterModified<TEntity, TKey>(entity);
             return isSave ? EFContext.Commit() : 0;
         }
@@ -184,7 +184,7 @@ namespace MyChy.Frame.Data
         /// <returns> 符合编号的记录，不存在返回null </returns>
         public virtual TEntity GetByKey(TKey key)
         {
-            PublicHelper.CheckArgument(key, "key");
+            //PublicHelper.CheckArgument(key, "key");
             return EFContext.Set<TEntity, TKey>().Find(key);
         }
 
